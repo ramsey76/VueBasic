@@ -1,0 +1,15 @@
+<v-container>
+    <h1>Counter</h1>
+    <v-row>
+        <v-col cols="8">
+            <v-text-field v-model="textFieldText" :rules="fieldRule"></v-text-field>
+        </v-col>
+        <v-col>
+            <v-btn color="info" @click="add()">Add</v-btn>
+        </v-col>
+        <v-col>
+            <v-btn color="error" @click="subtract()">Subtract</v-btn>
+        </v-col>
+    </v-row>
+    <clear @clearField="clear" />
+</v-container>

@@ -1,0 +1,16 @@
+<v-container>
+    <h1>ToDo list</h1>
+    <v-row v-for="item in currentToDo">
+        <v-col>
+            {{item.name}}
+        </v-col>
+    </v-row>
+    <v-row>
+        <v-col>
+            <v-text-field v-model="newItem"></v-text-field>
+        </v-col>
+        <v-col>
+            <v-btn @click="add()">Add</v-btn>
+        </v-col>
+    </v-row>
+</v-container>
